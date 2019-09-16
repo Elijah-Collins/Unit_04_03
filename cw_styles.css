@@ -70,7 +70,7 @@ nav#outline{
 nav#outline > h1{
    text-align: center;
 }
-#outline > ol:first-child{
+#outline ol{
    line-height: 2em;
    margin-top: 0px;
    margin-bottom: 0px;
@@ -78,8 +78,8 @@ nav#outline > h1{
    margin-right: 5px;
    list-style: upper-roman;
 }
-#outline > ol{
-   list-style: upper-alpha;
+#outline > ol > li > ol{
+   list-style-type: upper-alpha;
 }
 #outline a:link, #outline a:visited{
    color: rgb(101, 101, 101);
@@ -98,10 +98,16 @@ section > header > h1{
 }
 /* Article Styles */
 article > h2{
-   font-size:
+   font-size: 1.4em;
 }
-
-
-
+article > p:first-of-type::first-letter{
+   vertical-align: baseline;
+   font-size: 2em;
+} 
 /* Aside Styles */
-
+aside{
+   font-size: 1.4em;
+}
+aside > h1{
+   font-size: 1.4em;
+}
